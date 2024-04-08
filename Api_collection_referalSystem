@@ -1,0 +1,95 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "referalSystem",
+    "dateExported": "2024-04-08T14:36:33.783Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6d26d231-b9b7-4af3-9b13-552f1f4072ad",
+            "colId": "3d4fd62c-7d90-49a6-80d1-6fe4d20bd7cb",
+            "containerId": "",
+            "name": "register",
+            "url": "http://localhost:8000/api/register/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-07T14:40:03.791Z",
+            "modified": "2024-04-08T14:35:13.391Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"name\": \"asi\",\n\"email\": \"asi3@gmail.com\",\n\"password\": \"123\",\n\"referral_code\": \"000000\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d1a71c32-9f04-408a-a370-a8eed6a01874",
+            "colId": "3d4fd62c-7d90-49a6-80d1-6fe4d20bd7cb",
+            "containerId": "",
+            "name": "user-details",
+            "url": "http://localhost:8000/api/user-details/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-07T14:41:57.334Z",
+            "modified": "2024-04-08T14:36:22.577Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyNTE0NzUyLCJpYXQiOjE3MTI1MTQ0NTIsImp0aSI6IjZhYTAzZjBjNDk0ZjQ3NTk4ZmQxNGRjZmFjODVjZmRkIiwidXNlcl9pZCI6Nn0.UAcRYbU9PexIrGr66s0IQ8UDzQ-YlKk86LnMYvlA7vw"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyNTg3MjYzLCJpYXQiOjE3MTI1ODY5NjMsImp0aSI6ImU3MGY2YTllMWMwMTQ4OTQ4NmUzNDVjMmZjZmU5NDZhIiwidXNlcl9pZCI6MTZ9.gHdiFENi1rGqyBatPNrYhPGX-U-APQhhGKB8ELeRt_k"
+            },
+            "tests": []
+        },
+        {
+            "_id": "8d2875ac-5fd6-4c0d-a899-9c26a844d421",
+            "colId": "3d4fd62c-7d90-49a6-80d1-6fe4d20bd7cb",
+            "containerId": "",
+            "name": "token",
+            "url": "http://localhost:8000/api/token/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-04-07T17:05:51.670Z",
+            "modified": "2024-04-08T14:36:03.979Z",
+            "headers": [
+                {
+                    "name": "Accept-Language",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEyNTEwNTIyLCJpYXQiOjE3MTI1MTAyMjIsImp0aSI6IjQ2Y2U0YWY0NjdmMjQxNmQ4ZWNjZTIwOGU4MjdjNjc1IiwidXNlcl9pZCI6NH0.j4ZuOZkzWbBO5tdaKE6ixuBeyy2N9QhblHF1Wxw9bi4",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"email\": \"asi3@gmail.com\",\n\"password\": \"123\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
